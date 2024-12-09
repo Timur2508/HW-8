@@ -4,69 +4,73 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Домашняя работа № 8");
 
-        System.out.println("Задание № 1, 2");
+        System.out.println("Задание № 1");
 
         int[] weight = new int[]{1, 2, 3};
-        String str = Arrays.toString(weight);
-        System.out.println(Arrays.toString(weight) + " ,");
+        double[] arr = {1.57, 7.654, 9.986};
+        String[] seasons = {"Winter", "String", "Summer", "Autumn"};
 
-        double[] weight2 = {1.57, 7.654, 9.986};
-        String str2 = Arrays.toString(weight2);
-        System.out.println(Arrays.toString(weight2));
+        System.out.println("Задание № 2");
 
-        Long[] weight3 = new Long[]{200000000L, 300000000L};
-        String str3 = Arrays.toString(weight3);
-        System.out.println(Arrays.toString(weight3));
+        int[] arr1 = {1, 2, 3};
+        for (int i = 0; i < arr1.length; i++) {
+            if (i == arr1.length - 1) {
+                System.out.println(arr1[i]);
+                break;
+            }
+            System.out.println(arr1[i] + ",");
+        }
 
-        System.out.println("Задание № 3");
-        System.out.println("1 способ - целочисленные ");
-        int[] Weight = new int[]{1, 2, 3};
-        for (int i = Weight.length - 1; i >= 0; i--) {
-            System.out.print(Weight[i] + ", ");
+        double[] arr2 = {1.57, 7.654, 9.986};
+        for (int i = 0; i < arr2.length; i++) {
+            if (i == arr2.length - 1) {
+                System.out.println(arr2[i]);
+                break;
+            }
+            System.out.println(arr2[i] + ",");
         }
-        System.out.println(" ");
-        System.out.println("2 способ - целочисленные ");
-        int[] Weight2 = new int[]{1, 2, 3};
-        int[] reverse = new int[Weight2.length];
-        for (int i = 0; i < Weight2.length; i++) {
-            reverse[i] = Weight2[Weight2.length - i - 1];
+        String[] seasons1 = {"Winter", "String", "Summer", "Autumn"};
+        for (int i = 0; i < seasons1.length; i++) {
+            if (i == seasons1.length - 1) {
+                System.out.println(seasons1[i]);
+                break;
+            }
+            System.out.print(seasons1[i] + ",");
         }
-        System.out.println(Arrays.toString(reverse));
-        System.out.println(" ");
-        System.out.println("1 способ - дробные ");
-        double[] Weight_2 = new double[]{1.57d, 7.654d, 9.986d};
-        for (int i = Weight_2.length - 1; i >= 0; i--) {
-            System.out.print(Weight_2[i] + ", ");
-        }
-        System.out.println(" ");
-        System.out.println("2 способ - дробные");
-        double[] Weight__2 = new double[]{1.57d, 7.654d, 9.986d};
-        double[] reverse2 = new double[Weight__2.length];
-        for (int i = 0; i < Weight__2.length; i++) {
-            reverse2[i] = Weight__2[Weight__2.length - i - 1];
-        }
-        System.out.println(Arrays.toString(reverse2));
-        System.out.println(" ");
-        System.out.println("1 способ - большие числа ");
-        Long[] Weight3 = new Long[]{200000000L, 300000000L};
-        for (int i = Weight3.length - 1; i >= 0; i--) {
-            System.out.print(Weight3[i] + ", ");
-        }
-        System.out.println(" ");
-        System.out.println("2 способ - большие числа ");
-        Long[] Weight_3 = new Long[]{200000000L, 300000000L};
-        Long[] reverse_3 = new Long[Weight_3.length];
-        for (int i = 0; i < Weight_3.length; i++) {
-            reverse_3[i] = Weight_3[Weight_3.length - i - 1];
-        }
-        System.out.println(Arrays.toString(reverse_3));
-        System.out.println(" ");
-        System.out.println("Задание № 4");
-        int[] weight1 = new int[]{1, 2, 3};
-        for (int i = 0; i <= weight1.length - 1; i++) {
-            weight1[i] = weight1[i] + 1;
-            System.out.print(weight1[i] + " ");
 
+        System.out.println("Задача №3");
+        int[] arr3 = {1, 2, 3};
+        for (int i = arr3.length - 1; i >= 0; i--) {
+            if (i == arr3.length - 3) {
+                System.out.println(arr3[i]);
+                break;
+            }
+            System.out.print(arr3[i] + ",");
         }
+        double[] arr4 = {1.57, 7.654, 9.986};
+        for (int i = arr4.length - 1; i >= 0; i--) {
+            if (i == arr4.length - 3) {
+                System.out.println(arr4[i]);
+                break;
+            }
+            System.out.print(arr2[i] + ",");
+        }
+
+
+        String[] seasons2 = {"Winter", "Spring", "Summer", "Autumn"};
+        for (int i = seasons2.length - 1; i >= 0; i--) {
+            if (i == seasons2.length - 4) {
+                System.out.println(seasons2[i]);
+                break;
+            }
+            System.out.print(seasons2[i] + ",");
+        }
+        System.out.println("Задача №4");
+        int[] arr5 = {1, 2, 3};
+        for (int i = 0; i < 3; i++)
+            if (arr5[i] % 2 != 0) {
+                arr5[i] += 1;
+            }
+        System.out.print(Arrays.toString(arr5));
     }
 }
